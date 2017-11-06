@@ -3,7 +3,8 @@ MAINTAINER brian.wojtczak@1and1.co.uk
 ARG DEBIAN_FRONTEND=noninteractive
 COPY files /
 RUN \
-    apt-get update && \
+    apt-get update
+#    && \
 #    apt-get install -y software-properties-common python-software-properties && \
 #    add-apt-repository -y -u ppa:ondrej/php && \
 #    apt-get update && \
