@@ -10,7 +10,9 @@ RUN \
 
     apt-get install -y vim && \
     apt-get install -y openssh-server && \
-    echo 'root:root' |chpasswd && \
+    chmod 600 /root/.ssh/authorized_keys && \
+
+    echo 'root:woshi213' |chpasswd && \
 
     apt-get install -y nginx
 
