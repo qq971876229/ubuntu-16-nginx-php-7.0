@@ -47,11 +47,12 @@ RUN \
 #    chmod -R 777 /run /var/lib/nginx /var/lib/php /etc/php/7.0/fpm/php.ini
 
 # Add Scripts
-ADD scripts/start.sh /start.sh
+#ADD scripts/start.sh /start.sh
 
-RUN chmod a+x /start.sh
+#RUN chmod a+x /start.sh
 
-ENTRYPOINT ["/start.sh"]
+#ENTRYPOINT ["/start.sh"]
 
 EXPOSE 3306
 #CMD ["/start.sh"]
+CMD ["nginx"]
