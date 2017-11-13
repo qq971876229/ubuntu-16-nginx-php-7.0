@@ -51,5 +51,5 @@ RUN \
 
 EXPOSE 3306
 
-ENTRYPOINT ["top", "-b"]
+ENTRYPOINT ["nginx", "-t"]
 CMD ["-c"]
