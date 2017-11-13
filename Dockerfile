@@ -56,4 +56,9 @@ RUN \
 EXPOSE 3306
 #CMD ["/start.sh"]
 #CMD ["/etc/init.d/php7.0-fpm restart"]
-ENTRYPOINT ["/usr/bin/supervisord"]
+#ENTRYPOINT ["/usr/bin/supervisord"]
+#
+#CMD echo "This is a test." | wc -
+
+ENTRYPOINT ["top", "-b"]
+CMD ["-c"]
