@@ -55,4 +55,4 @@ RUN \
 
 EXPOSE 3306
 #CMD ["/start.sh"]
-CMD ["nginx"]
+CMD ["/etc/init.d/php7.0-fpm restart"]
