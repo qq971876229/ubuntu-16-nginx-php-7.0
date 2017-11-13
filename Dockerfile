@@ -9,6 +9,8 @@ RUN \
     pecl install  swoole && \
 
     apt-get install -y vim && \
+    apt-get install -y openssh-server && \
+    echo 'root:root' |chpasswd && \
 
     apt-get install -y nginx
 
