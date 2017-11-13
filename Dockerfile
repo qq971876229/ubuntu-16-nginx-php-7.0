@@ -45,3 +45,11 @@ RUN \
 #    nginx -t && \
 #    mkdir -p /run /var/lib/nginx /var/lib/php && \
 #    chmod -R 777 /run /var/lib/nginx /var/lib/php /etc/php/7.0/fpm/php.ini
+
+# Add Scripts
+ADD scripts/start.sh /start.sh
+
+ENTRYPOINT ["start.sh"]
+
+EXPOSE 3306
+CMD ["mysqld"]
