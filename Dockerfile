@@ -55,4 +55,5 @@ RUN \
 
 EXPOSE 3306
 #CMD ["/start.sh"]
-CMD ["/etc/init.d/php7.0-fpm restart"]
+#CMD ["/etc/init.d/php7.0-fpm restart"]
+ENTRYPOINT ["/usr/bin/supervisord"]
