@@ -52,4 +52,4 @@ RUN \
 EXPOSE 3306
 
 ENTRYPOINT ["top", "-b"]
-CMD ["-c"]
+#CMD ["-c"]
