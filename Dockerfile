@@ -8,9 +8,9 @@ RUN \
     apt-get install -y php-gnupg php-imagick php-mongodb php-redis php-dev php-streams php-fxsl && \
     pecl install  swoole && \
 
-    apt-get install -y vim
+    apt-get install -y vim && \
 
-    apt-get install -y nginx && \
+    apt-get install -y nginx
 
 
 #    mkdir /tmp/composer/ && \
