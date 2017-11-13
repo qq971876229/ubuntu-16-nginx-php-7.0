@@ -1,5 +1,5 @@
 FROM ubuntu
-MAINTAINER brian.wojtczak@1and1.co.uk
+MAINTAINER 971876229@qq.com
 ARG DEBIAN_FRONTEND=noninteractive
 COPY files /
 RUN \
@@ -49,7 +49,9 @@ RUN \
 # Add Scripts
 ADD scripts/start.sh /start.sh
 
-ENTRYPOINT ["start.sh"]
+RUN chmod a+x /start.sh
+
+ENTRYPOINT ["/start.sh"]
 
 EXPOSE 3306
-CMD ["mysqld"]
+#CMD ["/start.sh"]

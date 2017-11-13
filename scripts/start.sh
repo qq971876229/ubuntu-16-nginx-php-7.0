@@ -1,4 +1,6 @@
 #!/bin/bash
+echo "in startup, args: $@"
+
 
 # Disable Strict Host checking for non interactive git clones
 
@@ -203,5 +205,6 @@
 #fi
 
 # Start supervisord and services
-exec /usr/bin/supervisord -n -c /etc/supervisord.conf
+#exec /usr/bin/supervisord -n -c /etc/supervisord.conf
+
 
