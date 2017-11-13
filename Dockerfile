@@ -56,4 +56,4 @@ EXPOSE 3306
 
 ENTRYPOINT ["/bin/echo"]
 #CMD ["/bin/echo", "his is a echo test "]
-CMD ["nginx", "-g", "daemon off;"]
+#CMD ["nginx", "-g", "daemon off;"]
