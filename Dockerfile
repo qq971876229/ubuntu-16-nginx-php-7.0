@@ -12,7 +12,7 @@ RUN \
 
     apt-get install -y nginx  && \
 
-    nginx -t
+    nginx
 
 #    mkdir /tmp/composer/ && \
 #    cd /tmp/composer && \
