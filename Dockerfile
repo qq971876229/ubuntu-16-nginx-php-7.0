@@ -29,7 +29,7 @@ RUN \
 
     apt-get install -y nginx && \
 
-    chmod 755 /start.sh
+#    chmod 755 /start.sh
 
 #    mkdir /tmp/composer/ && \
 #    cd /tmp/composer && \
@@ -76,4 +76,4 @@ ENTRYPOINT ["top", "-b"]
 #CMD ["/bin/echo", "his is a echo test "]
 #CMD ["nginx", "-g", "daemon off;"]
 
-CMD ["/start.sh"]
+#CMD ["/start.sh"]
