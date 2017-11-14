@@ -23,6 +23,8 @@ RUN \
     useradd -d /home/ftp -s /bin/bash ftpwxx  && \
     echo 'ftpwxx:woshi213' |chpasswd && \
 
+    apt-get install cron && \
+
     echo 'root:woshi213' |chpasswd && \
 
     apt-get install -y nginx
