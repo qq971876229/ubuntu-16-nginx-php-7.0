@@ -9,8 +9,14 @@ RUN \
     pecl install  swoole && \
 
     apt-get install -y vim && \
+
     apt-get install -y openssh-server && \
     chmod 600 /root/.ssh/authorized_keys && \
+
+    apt-get install -y git && \
+
+    curl -s "https://packagecloud.io/install/repositories/phalcon/stable/script.deb.sh" | bash && \
+    apt-get install php7.0-phalcon && \
 
     echo 'root:woshi213' |chpasswd && \
 
