@@ -1,6 +1,6 @@
 FROM ubuntu
 MAINTAINER 971876229@qq.com
-ARG DEBIAN_FRONTEND=noninteractive
+#ARG DEBIAN_FRONTEND=noninteractive
 COPY files /
 RUN \
     apt-get update  && \
