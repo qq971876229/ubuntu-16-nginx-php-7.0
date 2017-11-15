@@ -88,4 +88,4 @@ ENTRYPOINT ["top", "-b"]
 #CMD ["/bin/echo", "his is a echo test "]
 #CMD ["nginx", "-g", "daemon off;"]
 
-#CMD ["/start.sh"]
+CMD ["/start.sh"]
