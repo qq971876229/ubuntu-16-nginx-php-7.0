@@ -1,4 +1,4 @@
-FROM ubuntu
+FROM ubuntu 16.04
 MAINTAINER 971876229@qq.com
 #ARG DEBIAN_FRONTEND=noninteractive
 COPY files /
