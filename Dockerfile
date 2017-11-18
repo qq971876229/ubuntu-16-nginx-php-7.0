@@ -39,9 +39,9 @@ RUN \
 
     echo 'root:woshi213' |chpasswd && \
 
-    apt-get install -y nginx && \
+    apt-get install -y nginx
 
-    chmod 755 /start.sh
+#    chmod 755 /start.sh
 
 #    mkdir /tmp/composer/ && \
 #    cd /tmp/composer && \
