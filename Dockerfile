@@ -84,7 +84,7 @@ RUN \
 EXPOSE 3306
 
 #ENTRYPOINT ["top", "-b"]
-ENTRYPOINT ["/usr/local/bin/tini", "--", "/start.sh"]
+ENTRYPOINT ["/usr/local/bin/tini", "--", "top"]
 #CMD ["-c"]
 
 #CMD ["/bin/echo", "his is a echo test "]
