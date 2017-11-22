@@ -1,5 +1,5 @@
 #!/bin/bash
-service ssh start
+#service ssh start
 #service vsftpd start
-#nginx
+nginx
 #/etc/init.d/php7.0-fpm start

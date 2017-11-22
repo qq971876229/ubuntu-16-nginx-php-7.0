@@ -1,4 +1,5 @@
-FROM ubuntu:16.04
+#FROM ubuntu:16.04
+FROM krallin/ubuntu-tini:trusty
 MAINTAINER 971876229@qq.com
 #ARG DEBIAN_FRONTEND=noninteractive
 COPY files /
@@ -82,7 +83,8 @@ RUN \
 
 EXPOSE 3306
 
-ENTRYPOINT ["top", "-b"]
+#ENTRYPOINT ["top", "-b"]
+ENTRYPOINT ["/usr/local/bin/tini", "--", "/start.sh"]
 #CMD ["-c"]
 
 #CMD ["/bin/echo", "his is a echo test "]
