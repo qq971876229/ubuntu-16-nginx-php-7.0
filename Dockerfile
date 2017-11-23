@@ -35,13 +35,13 @@ RUN \
     echo 'ftpwxx:woshi213' |chpasswd && \
 
     #crontab -l crontab -e
-    apt-get install cron && \
+#    apt-get install cron && \
 
     echo 'root:woshi213' |chpasswd && \
 
-    apt-get install -y nginx && \
+    apt-get install -y nginx
 
-    chmod 755 /start.sh
+#    chmod 755 /start.sh
 
 
 EXPOSE 3306
