@@ -8,31 +8,31 @@ RUN \
     apt-get install -y php-gnupg php-imagick php-mongodb php-redis php-dev php-streams php-fxsl && \
 
     #composer
-    curl -sS https://getcomposer.org/installer | php  && \
-    /usr/bin/php composer.phar --version && \
-    mv composer.phar /usr/local/bin/composer && \
-    apt-get install -y snmp-mibs-downloader && \
+#    curl -sS https://getcomposer.org/installer | php  && \
+#    /usr/bin/php composer.phar --version && \
+#    mv composer.phar /usr/local/bin/composer && \
+#    apt-get install -y snmp-mibs-downloader && \
 
     #swoole
     pecl install  swoole && \
 
-    apt-get install -y vim && \
+#    apt-get install -y vim && \
 
     #ssh
-    apt-get install -y openssh-server && \
-    chmod 600 /root/.ssh/authorized_keys && \
-
-    apt-get install -y git && \
+#    apt-get install -y openssh-server && \
+#    chmod 600 /root/.ssh/authorized_keys && \
+#
+#    apt-get install -y git && \
 
     #phalcon
     curl -s "https://packagecloud.io/install/repositories/phalcon/stable/script.deb.sh" | bash && \
     apt-get install php7.0-phalcon && \
 
     #ftp
-    apt-get install -y vsftpd && \
-    mkdir /home/ftp && \
-    useradd -d /home/ftp -s /bin/bash ftpwxx  && \
-    echo 'ftpwxx:woshi213' |chpasswd && \
+#    apt-get install -y vsftpd && \
+#    mkdir /home/ftp && \
+#    useradd -d /home/ftp -s /bin/bash ftpwxx  && \
+#    echo 'ftpwxx:woshi213' |chpasswd && \
 
     #crontab -l crontab -e
 #    apt-get install cron && \
@@ -41,7 +41,7 @@ RUN \
 
     apt-get install -y nginx
 
-#    chmod 755 /start.sh
+#    chmod 755 /start.sh`
 
 
 EXPOSE 3306
