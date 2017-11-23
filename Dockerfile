@@ -1,5 +1,5 @@
-#FROM ubuntu:16.04
-FROM krallin/ubuntu-tini:16.04
+FROM ubuntu:16.04
+#FROM krallin/ubuntu-tini:16.04
 MAINTAINER 971876229@qq.com
 COPY files /
 RUN \
