@@ -71,7 +71,7 @@ RUN \
 EXPOSE 3306
 
 #ENTRYPOINT ["top", "-b"]
-ENTRYPOINT ["service nginx","start"]
+ENTRYPOINT nginx
 #CMD ["-c"]
 
 #CMD ["/bin/echo", "his is a echo test "]
