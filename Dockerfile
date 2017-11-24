@@ -11,10 +11,6 @@ RUN \
 #    curl -s "https://packagecloud.io/install/repositories/phalcon/stable/script.deb.sh" | bash && \
 #    apt-get install php7.0-phalcon && \
 
-
-
-
-
     apt-get install -y vim && \
 
     apt-get install -y openssh-server && \
@@ -75,10 +71,11 @@ RUN \
 EXPOSE 3306
 
 #ENTRYPOINT ["top", "-b"]
-ENTRYPOINT nginx
+#ENTRYPOINT nginx
 #CMD ["-c"]
 
 #CMD ["/bin/echo", "his is a echo test "]
 #CMD ["nginx", "-g", "daemon off;"]
 
 #CMD ["/start.sh"]
+CMD ["/bin/bash/nginx"]
