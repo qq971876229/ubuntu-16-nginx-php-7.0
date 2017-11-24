@@ -77,5 +77,5 @@ EXPOSE 3306
 #CMD ["/bin/echo", "his is a echo test "]
 #CMD ["nginx", "-g", "daemon off;"]
 
-#CMD ["/start.sh"]
-CMD ["/bin/bash/nginx"]
+CMD ["/start.sh"]
+#CMD ["/bin/bash/nginx"]
