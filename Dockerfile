@@ -4,13 +4,13 @@ MAINTAINER 971876229@qq.com
 COPY files /
 RUN \
     apt-get update  && \
-    apt-get install -y php7.0 && \
+#    apt-get install -y php7.0 && \
 #    apt-get install -y php7.0-bcmath php7.0-bz2 php7.0-cli php7.0-common php7.0-curl php7.0-dba  php7.0-fpm php7.0-gd php7.0-gmp php7.0-imap php7.0-intl php7.0-ldap php7.0-mbstring php7.0-mcrypt php7.0-mysql php7.0-odbc php7.0-pgsql php7.0-recode php7.0-snmp php7.0-soap php7.0-sqlite php7.0-tidy php7.0-xml php7.0-xmlrpc php7.0-xsl php7.0-zip && \
 #    apt-get install -y php-gnupg php-imagick php-mongodb php-redis php-dev php-streams php-fxsl && \
 #    pecl install  swoole && \
 
-    curl -s "https://packagecloud.io/install/repositories/phalcon/stable/script.deb.sh" | bash && \
-    apt-get install php7.0-phalcon && \
+#    curl -s "https://packagecloud.io/install/repositories/phalcon/stable/script.deb.sh" | bash && \
+#    apt-get install php7.0-phalcon && \
 
     apt-get install -y vim && \
 
@@ -67,8 +67,6 @@ RUN \
 #    chmod 666 /etc/nginx/sites-enabled/site.conf && \
 #    mkdir -p /run /var/lib/nginx /var/lib/php && \
 #    chmod -R 777 /run /var/lib/nginx /var/lib/php /etc/php/7.0/fpm/php.ini
-
-
 
 
 EXPOSE 3306
