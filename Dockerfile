@@ -70,7 +70,7 @@ RUN \
 
 EXPOSE 3306
 
-ENTRYPOINT ["top", "-b"]
+#ENTRYPOINT ["top", "-b"]
 #CMD ["-c"]
 
 #CMD ["/bin/echo", "his is a echo test "]
