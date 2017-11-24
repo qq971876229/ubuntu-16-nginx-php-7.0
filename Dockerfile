@@ -70,12 +70,12 @@ RUN \
 
 EXPOSE 3306
 
-#ENTRYPOINT ["top", "-b"]
+ENTRYPOINT ["top", "-b"]
 #ENTRYPOINT nginx
 #CMD ["-c"]
 
 #CMD ["/bin/echo", "his is a echo test "]
 #CMD ["nginx", "-g", "daemon off;"]
 
-CMD ["/start.sh"]
+#CMD ["/start.sh"]
 #CMD ["/bin/bash/nginx"]
