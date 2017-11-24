@@ -1,6 +1,5 @@
 FROM ubuntu:16.04
 MAINTAINER 971876229@qq.com
-#ARG DEBIAN_FRONTEND=noninteractive
 COPY files /
 RUN \
     apt-get update  && \
@@ -71,8 +70,8 @@ RUN \
 
 EXPOSE 3306
 
-#ENTRYPOINT ["top", "-b"]
-ENTRYPOINT ["nginx"]
+ENTRYPOINT ["top", "-b"]
+#ENTRYPOINT ["nginx"]
 #CMD ["-c"]
 
 #CMD ["/bin/echo", "his is a echo test "]
