@@ -15,8 +15,8 @@ RUN \
 
     apt-get install -y git && \
 
-    curl -s "https://packagecloud.io/install/repositories/phalcon/stable/script.deb.sh" | bash && \
-    apt-get install php7.0-phalcon && \
+#    curl -s "https://packagecloud.io/install/repositories/phalcon/stable/script.deb.sh" | bash && \
+#    apt-get install php7.0-phalcon && \
 
     apt-get install -y vsftpd && \
     mkdir /home/ftp && \
@@ -76,4 +76,4 @@ EXPOSE 3306
 #CMD ["/bin/echo", "his is a echo test "]
 #CMD ["nginx", "-g", "daemon off;"]
 
-#CMD ["/start.sh"]
+CMD ["/start.sh"]
