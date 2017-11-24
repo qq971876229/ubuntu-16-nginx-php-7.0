@@ -11,6 +11,10 @@ RUN \
 #    curl -s "https://packagecloud.io/install/repositories/phalcon/stable/script.deb.sh" | bash && \
 #    apt-get install php7.0-phalcon && \
 
+
+
+
+
     apt-get install -y vim && \
 
     apt-get install -y openssh-server && \
