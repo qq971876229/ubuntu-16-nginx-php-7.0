@@ -71,7 +71,7 @@ RUN \
 EXPOSE 3306
 
 #ENTRYPOINT ["top", "-b"]
-ENTRYPOINT nginx
+#ENTRYPOINT nginx
 ENTRYPOINT ["nginx", "-g", "daemon off;"]
 #CMD ["-c"]
 
