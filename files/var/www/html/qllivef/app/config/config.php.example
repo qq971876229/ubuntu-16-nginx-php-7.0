@@ -1,0 +1,80 @@
+<?php
+
+
+
+
+class config
+{
+ 
+            
+   const app = array
+   (
+       "ver"=>"1",
+       "live_app_id" => '1400034387',
+       "live_account_type" => '13696',
+       "live_admin" => 'livemgr',//直播管理员
+       "live_service"=>'service',
+       "app_key" => 'jjfdf3343#DD!!@jljclj#D45kjlcDD9991()k1G',//直播管理员
+       "img_bucket" => 'img',//cos空间
+       "img_bucket_url" => 'http://liveimg-10065661.image.myqcloud.com/',//图片存储空间
+       "file_bucket_url" => 'http://liveimg-10065661.cossh.myqcloud.com',//文件存储空间
+       'SecretId'       => 'AKIDQuq4bColQLNavMm08NjO1mdbfvNwjhpJ',//
+       'SecretKey'      => 'x7kAu1R5ncdkyIlM3xot5NqQ8wsu3IeP',
+       "live_bizid"=>"4555",
+       "live_push_url_key"=>"3eaa8f98cd0bba88cc90e9b7b6ec94b8",
+       "live_url"=>"rtmp://4555.liveplay.myqcloud.com/live/4555_"
+       
+   );
+   
+   const pay = array('rate'=>0.6,"reference"=>0.1);
+   
+      const database = array(
+                'adapter'     => 'Mysql',
+                "host" => "10.66.243.251",
+                "username" => "root",
+                "password" => "#ffvCC5j1321jd@#",
+                "dbname" => "live1v1",
+                 "charset" => "utf8",
+                "collation" => "utf8mb4_general_ci"
+    );
+   
+      
+   
+   const redis=[
+       'host' => '10.66.243.50',
+       'port' => '6379',
+       'pass'=>'crs-fr1cbv7p:678d9ab#23@33',
+   ];
+   const Mongodb=
+   [
+       'uri'=>'mongodb://mongouser:kj!lj21*(kjl123@10.66.128.207:27017/admin'
+   ];
+   
+   
+   const error =
+   array("logout"=>100,"live_end"=>101);
+   
+   const mess_type =
+   array(
+       "live_start"=>1,//系统消息
+       "gift"=>2,
+       "live_accept"=>3,
+       "mess"=>4,
+       "all_mess"=>5
+   );
+   
+   
+   const complain_type=
+   array(
+       "live"=>1,
+       "find"=>2,
+       "artist"=>3,
+       "group"=>4
+   );
+   
+   const debug=[
+       'recharge_multiple' => '100'//100正常比例
+   ];
+   
+   
+}

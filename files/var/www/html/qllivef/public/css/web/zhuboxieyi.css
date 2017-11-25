@@ -1,0 +1,20 @@
+.zbxy{
+    padding:10px 5px;
+}
+.xy_h1{
+    font-size: 20px;
+    font-weight: bold;
+    text-align: center;
+}
+
+.xy_h2{
+    font-size: 14px;
+    font-weight: bold;
+}
+.xy_p{
+    font-size: 12px;
+    color: #5b5b5b;
+    line-height: 22px;
+    text-indent: 10px;
+    margin-bottom: 10px;
+}

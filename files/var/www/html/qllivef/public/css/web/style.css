@@ -1,0 +1,187 @@
+html,body,div,span,applet,object,iframe,h1,h2,h3,h4,h5,h6,p,blockquote,pre,a,abbr,acronym,address,big,cite,code,del,dfn,em,font,img,ins,kbd,q,s,samp,small,strike,strong,sub,sup,tt,var,dl,dt,dd,ol,ul,li,fieldset,form,label,legend,table,caption,tbody,tfoot,thead,tr,th,td {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    outline: 0;
+    font-weight: inherit;
+    font-style: inherit;
+    font-size: 100%;
+    font-family: inherit;
+    vertical-align: baseline;
+    width: 100%;
+}
+ 
+html {
+    font-family:  "Microsoft YaHei", "微软雅黑", 'sans-serif',"Tahoma", "Helvetica";
+    font-size: 10px;
+ 
+    background: #fff;
+    -webkit-text-size-adjust: 100%;
+    -ms-text-size-adjust: 100%;
+    -webkit-tap-highlight-color: rgba(0, 0, 0, 0)
+}
+ 
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+ 
+img {
+    border: 0;
+    max-width: 100%!important;
+    vertical-align: middle;
+}
+ 
+address,caption,cite,code,dfn,i,em,strong,th,var {
+    font-weight: normal;
+    font-style: normal;
+}
+ 
+
+
+ol,
+ul {
+    list-style: none;
+}
+ 
+a {
+    text-decoration: none;
+}
+ 
+a:hover,
+a:focus {
+    outline: none;
+}
+ 
+caption,
+th {
+    text-align: left;
+    font-weight: normal;
+}
+ 
+h1,h2,h3,h4,h5,h6 {
+    font-weight: normal;
+    font-size: 100%;
+}
+ 
+q:before,q:after {
+    content: ”;
+}
+ 
+abbr,acronym {
+    border: 0;
+}
+ 
+button,input,optgroup,select,textarea {
+    margin: 0;
+    font: inherit;
+    color: inherit;
+}
+ 
+* {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box
+}
+ 
+:before,:after {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+ 
+input[type=search]::-webkit-search-cancel-button,
+input[type=search]::-webkit-search-decoration {
+    -webkit-appearance: none;
+}
+ 
+ 
+@media screen and (min-width:100px){ /*  iPhone 4,5 */
+ html{ font-size: 10px;}
+}
+@media screen and (min-width:320px){ /*  iPhone 4,5 */
+ html{ font-size: 10px;}
+}
+@media screen and (min-width:375px){ /*  iPhone 6 */
+ html{ font-size: 12px;}
+}
+@media screen and (min-width:414px){  /*  iPhone 6 plus */
+ html{ font-size: 12px;}
+}
+@media screen and (min-width:600px){
+    html{ font-size:14px;}
+}
+@media screen and (min-width:640px) {
+    html{font-size: 125%;}
+}
+@media screen and (min-width:750px) {
+    html{font-size: 150%;}
+}
+@media screen and (min-width:1242px) {
+   html{font-size: 187.5%;} 
+}
+
+body{
+    width: 100%;
+}
+
+
+.main{
+    margin:0;
+    width: 100%;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+.regular{
+    padding: 1rem 2rem;
+    font-size: 1.4rem;
+    color: #5d5d5d;
+}
+
+.line-throught{
+    position: relative;
+    display: block;
+    font-size: 1.5rem;
+    color: #000;
+    text-align: center;
+}
+
+
+.line-throught:before,.line-throught:after{
+    content: "";
+    position: absolute;
+    top: 52%;
+    background:#999;
+    width: 40%;
+    height: 1px; 
+}
+
+.line-throught:before{
+    left: 0;
+}
+.line-throught:after{
+    right: 0;
+}
+
+.yellow{
+    color: #fe6838;
+}
+
+.regular p,.regular h2{
+    padding: 0.5rem 0;
+}
+
+.regular section{
+    text-indent: 0.5rem;
+}
+
+.cycle,.Withdrawals{
+    margin-top: 1rem;
+}
+
+.Withdrawals .note-txt{
+    font-size: 1.2rem;
+    margin-top: 1rem;
+}

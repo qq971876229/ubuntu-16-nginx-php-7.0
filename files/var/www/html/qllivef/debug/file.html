@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+</head>
+
+<script src="http://lib.sinaapp.com/js/jquery/1.9.1/jquery-1.9.1.min.js"></script>
+	
+<body>
+
+
+		<form enctype="multipart/form-data" id="file_form">
+								<input name="img" type="file" />
+								</form>
+							<input type="button" value="上传图片"  onclick="load_file();"/>
+							
+							
+							
+							
+<script>
+		
+		
+			
+		
+function load_file()
+{
+    var formData = new FormData($('#file_form')[0]);
+		
+	var url = "/img/upload_other";
+	
+		post_file(url,formData,function(data)
+		{
+					
+				handler_msg(data,function(json)
+				{
+					var url = get_img(json.data);
+					
+					$("#img_show").attr('src',url); 
+					
+					$("#img").val(json.data);
+				});
+				
+		});
+		}
+		
+		
+function post_file(url,content,handler_error)
+{
+
+		
+	url = "../public/index.php?_url=/img/upload_file";
+	
+	
+	$.ajax(
+		  { 
+		  type: 'POST',
+		  url: url, 
+		   data:content,
+		   processData: false,
+		   contentType: false,   
+		  success: function(data)
+		  {
+			  			
+			 alert(data);
+			 
+			},
+			'error' : function(i, data)
+			{
+				
+				alert(data);
+			}
+		});
+			
+			
+}
+	
+	
+</script>							
+							
+							
+
+</body>
+</html>

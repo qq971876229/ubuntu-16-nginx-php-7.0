@@ -1,0 +1,317 @@
+html,body,div,span,applet,object,iframe,h1,h2,h3,h4,h5,h6,p,blockquote,pre,a,abbr,acronym,address,big,cite,code,del,dfn,em,font,img,ins,kbd,q,s,samp,small,strike,strong,sub,sup,tt,var,dl,dt,dd,ol,ul,li,fieldset,form,label,legend,table,caption,tbody,tfoot,thead,tr,th,td {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    outline: 0;
+    font-weight: inherit;
+    font-style: inherit;
+    font-size: 100%;
+    font-family: inherit;
+    vertical-align: baseline;
+    width: 100%;
+}
+ 
+html {
+    font-family: 'sans-serif', "Microsoft YaHei", "微软雅黑", "Tahoma", "Helvetica";
+    font-size: 10px;
+ 
+    background: #fff;
+    -webkit-text-size-adjust: 100%;
+    -ms-text-size-adjust: 100%;
+    -webkit-tap-highlight-color: rgba(0, 0, 0, 0)
+}
+ 
+
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+ 
+img {
+    border: 0;
+    max-width: 100%!important;
+    vertical-align: middle;
+}
+ 
+address,caption,cite,code,dfn,i,em,strong,th,var {
+    font-weight: normal;
+    font-style: normal;
+}
+ 
+ol,
+ul {
+    list-style: none;
+}
+ 
+a {
+    text-decoration: none;
+}
+ 
+a:hover,
+a:focus {
+    outline: none;
+}
+ 
+caption,
+th {
+    text-align: left;
+    font-weight: normal;
+}
+ 
+h1,h2,h3,h4,h5,h6 {
+    font-weight: normal;
+    font-size: 100%;
+}
+ 
+q:before,q:after {
+    content: ”;
+}
+ 
+abbr,acronym {
+    border: 0;
+}
+ 
+button,input,optgroup,select,textarea {
+    margin: 0;
+    font: inherit;
+    color: inherit;
+}
+ 
+* {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box
+}
+ 
+:before,:after {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+ 
+input[type=search]::-webkit-search-cancel-button,
+input[type=search]::-webkit-search-decoration {
+    -webkit-appearance: none;
+}
+ 
+article,aside,details,figcaption,figure,footer,header,hgroup,nav,section,summary {
+    display: block;
+}
+ 
+@media screen and (min-width:100px){ /*  iPhone 4,5 */
+ html{ font-size: 10px;}
+}
+@media screen and (min-width:320px){ /*  iPhone 4,5 */
+ html{ font-size: 10px;}
+}
+@media screen and (min-width:375px){ /*  iPhone 6 */
+ html{ font-size: 12px;}
+}
+@media screen and (min-width:414px){  /*  iPhone 6 plus */
+ html{ font-size: 12px;}
+}
+@media screen and (min-width:600px){
+    html{ font-size:14px;}
+}
+@media screen and (min-width:640px) {
+    html{font-size: 125%;}
+}
+@media screen and (min-width:750px) {
+    html{font-size: 150%;}
+}
+@media screen and (min-width:1242px) {
+   html{font-size: 187.5%;} 
+}
+
+.main{
+    background:url(../img/xlbg_01.jpg);
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    height: 53.75rem;
+}
+
+.main-top{
+    width: 100%;
+    height: 45%;
+}
+
+.content{
+    padding: 2rem;
+    width: 100%;
+    position: relative;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+.invite{
+    font-size: 1.4rem;
+    color: rgba(255,255,255,0.7);
+    height: 2.5rem;
+}
+
+.invite span{
+    margin: 0 1rem;
+}
+
+.register{
+    /*background:#fff;*/
+}
+
+.register .form-info li{
+    height: 14%;
+}
+
+.register .form-info li input{
+    height: 4rem;
+    border-style: none;
+    border-radius: 0.5rem;
+   
+
+}
+
+.in-code{
+    width: 68%;
+    padding: 0.3rem 0.7rem;
+    font-size: 1.3rem;
+}
+
+.in-tel,.in-pass{
+    font-size: 1.3rem;
+}
+
+
+
+.in-tel,.in-pass,.submit-btn{
+    width: 100%;
+    padding: 0.3rem 0.7rem;
+}
+
+
+.code-btn{
+    margin-left: 0.5rem;
+    width: calc( 32% - 0.5rem );
+    background: #ffc43a;
+    color: #fff;
+    font-size: 1.2rem;
+}
+
+.code-btn:active{
+    background: #fab412;
+}
+
+.code-btn-click{
+    background: #c0c0bf;
+    color: #000;
+    font-size: 2rem;
+}
+
+.submit-btn{
+     font-size: 1.8rem;
+    letter-spacing: 0.1rem;
+    background: #db3894;
+    color: #fff;
+   box-shadow:0 0.5rem 0 #c4217d;
+}
+
+.subm_btn{
+    display: block;
+     height: 4rem;
+     line-height: 4rem;
+    border-style: none;
+    border-radius: 0.5rem;
+    text-align: center;
+}
+
+.submit-btn:active{
+    background: #bc3280;
+}
+
+.foot{
+    width: 100%;
+    height: 5rem;
+    line-height: 5rem;
+    display: flex;
+    justify-content: space-between;
+    padding: 0 1.5rem 0 0.5rem;
+    position: fixed;
+    bottom: 0;
+    background: #fff;
+}
+
+.foot-content span{
+    font-size: 1.8rem;
+    color: #9a9a9a;
+}
+
+.xl-logo{
+    padding: 0.5rem;
+    width: 4rem;
+    height: 4rem;
+}
+
+.down-btn{
+    text-align: right;
+}
+
+.down-btn a{
+    padding: 0.7rem 1.2rem;
+    background: #ff6924;
+    border-radius: 1rem;
+    color: #fff;
+    font-size: 1.4rem;
+}
+
+.down-btn a:active{
+    background: #e05f23;
+}
+
+/*注册成功后弹窗*/
+
+.wrap{
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    z-index: 100;
+    top: 0;
+    background: rgba(0,0,0,0.5);
+    border:1px solid #999;
+    display: none;
+}
+
+.wrap-content{
+    width: 80%;
+    height: 15rem;
+    background: #fff;
+    top: 50%;
+    left:50%;
+    transform:translate(-50%,-50%);
+    text-align: center;
+    position: absolute;
+    padding: 2rem 0;
+}
+
+.close-btn{
+    position: absolute;
+    top: -0.75rem;
+    right: -0.75rem;
+    width: 1.5rem;
+    height: 1.5rem;
+    line-height: 1.5rem;
+    background: red;
+    color: #fff;
+    border-radius: 1.5rem;
+}
+
+.wrap-span{
+    font-size: 1.8rem;
+    color: #999;
+    height: 4rem;
+    display: inline-block;
+}
+
+.wrap-down{
+    height: 5rem;
+    text-align: center;
+    margin-top: 2rem;
+}
