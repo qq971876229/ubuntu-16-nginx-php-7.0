@@ -1,0 +1,136 @@
+@charset "utf-8";
+/*reset*/
+body, div, dl, dt, dd, ul, ol, li, h1, h2, h3, h4, h5, h6, form, legend, input, textarea, p, th, td {margin: 0;padding: 0}
+a, input, button, select, textarea {outline: 0}
+img {border: 0;vertical-align: middle}
+em,i{font-style: normal}
+textarea {resize: none}
+table{ border-collapse:collapse}
+body {font: 14px/1.5 \5FAE\8F6F\96C5\9ED1, Helvetica, Arial, sans-serif; color:#333; max-width:480px; margin:0 auto}
+a {text-decoration: none}
+a:hover {text-decoration: underline}
+ol, ul {list-style: none}
+h1, h2, h3, h4, h5 {font-size: 14px}
+input, label, select {vertical-align: middle;font: 100% \5FAE\8F6F\96C5\9ED1}
+.clearfix:before, .clearfix:after {content: ".";display: table;height: 0;font-size: 0;line-height: 0;visibility: hidden}
+.clearfix:after {clear: both}
+.clearfix {*zoom:1}
+/*common*/
+.fl {float: left}
+.fr {float: right}
+em{ color:#ff6e00}
+table td.bln{ border-left:none}
+table td.brn{ border-right:none}
+.m_form{margin:15px;}
+.form_title{ border-bottom:1px solid #bbb;  padding-bottom:8px}
+.form_title em{ font-size:16px;  }
+.m_btn{ background:#74c314;background:-webkit-linear-gradient(#8dce13,#5bb614);background:linear-gradient(#8dce13,#5bb614); border-radius:2px; height:36px; line-height:36px; display:inline-block; padding:0 22px; text-align:center; box-shadow:0 1px 0 #55a310;color:#fff; font-size:18px;}
+a.m_btn:hover{ text-decoration:none}
+input.m_btn{ border:none; cursor:pointer}
+.form_row{ margin:15px 0}
+.m_input{ width:196px; height:34px; border:1px solid #ddd}
+.m_tips{ font-size:12px; color:#ff6e00; padding: 2px 5px 0}
+.btn_code{ font-size:14px;width:27%; float:right; margin-top:-1px; padding:0}
+.form_s .form_row .m_input{ width:67.5%; padding:0 1.5%}
+.form_l .form_row .m_input{ width:96.4%; padding:0 1.5%}
+.btn100{ width:100%; padding:0}
+.m_title{ background:#eee; line-height:36px; padding:0 20px; text-align:center; position:relative; font-weight:normal; border-bottom:1px solid #c9c9c9;}
+.n_title{ border-top:1px solid #c9c9c9; text-align:center; height:16px; margin-top:15px;}
+.n_title span{ position:relative; top:-12px; line-height:1; background:#fff; padding:0 10px}
+.back{ position:absolute; left:0; top:0; font-size:20px; color:#ff6e00;padding:0 10px}
+a.back:hover{ text-decoration:none; }
+.f_pay_btn { margin-bottom:20px;border:1px solid #3fb3ef; width:99.4%; height:46px; border-radius:23px; background: #46b4ec; background: linear-gradient(#5fc7fc, #299eda); color:#fff; font-size:21px;}
+.f_pay_btn:hover { opacity:0.9;}
+/*main*/
+.header{padding:8px 10px;}
+.h_l{ display:inline-block; width:50%; text-align:left}
+.h_r{ display:inline-block; width:50%; text-align:right; color:#333; font-size:12px;}
+.h_r a{ color:#333}
+.footer{ text-align:center; font-size:12px; background:#ddd; padding:15px 5%; width:90%; display:inline-block; color:#8b8989; line-height:1.8}
+.footer a{ color:#474646}
+
+/*首页*/
+.i_user{ padding:20px 10px; line-height:1.8}
+.menu_i{ width:100%}
+.menu_i td{ width:50%; border:1px solid #c9c9c9}
+.menu_i a{ display:block; height:45px; margin:20px 0 20px 10px; background:url(../images/icon.png) no-repeat; background-size:50px auto}
+a.menu_i1{ background-position:right -4px}
+a.menu_i2{ background-position:right -52px}
+a.menu_i3{ background-position:right -100px}
+a.menu_i4{ background-position:right -149px}
+.menu_i a:hover{ text-decoration:none}
+.menu_i em{ font-size:16px; color:#474646}
+.menu_i span{ color:#949292; font-size:13px}
+.i_down_wrap{ background:#f6f6f6; padding:15px 0 10px}
+.i_down_l{ width:47%; display:inline-block; text-align:center}
+.i_down_c{ width:50%; height:175px; display:inline-block; position:relative; vertical-align:middle; text-align:center}
+.i_down_c span{ color:#ccc; position:absolute}
+.i_down_c a{ margin-top:70px;  }
+.banner{ position:relative}
+.banner_down {display: block; height: 27%; left: 3%; position: absolute;top: 15%; width: 65%;}
+
+/*评论*/
+.comm_list{ padding:0 10px}
+.comm_t{ color:#8b8989; border-bottom:1px dashed #adadad; padding-bottom:3px}
+.comm_c{ margin:6px 0 20px}
+.star{ background:url(../images/star.png) repeat-x; background-size:19px auto; width:95px; height:15px; margin:5px 5px 0 0}
+
+/*注册和登录*/
+.form_other{ margin:12px 0}
+.login_change{ color:#333; margin-top:1px}
+
+/**/
+.c_down{ background:#eee; padding:22px 10px; border-top:1px solid #C9C9C9; margin-top:60px}
+
+/*了解KC*/
+.know h2{ border-bottom:1px dashed #d9d9d9;}
+.know img{ width:202px; display:block; margin:25px auto 35px}
+.know_c{ margin:15px}
+
+/*费率查询*/
+.rate_h{ width:304px; margin:25px auto}
+.rate_tbl{ width:100%; font-size:13px;}
+.rate_tbl th{ background:#eee; border-bottom:1px solid #c9c9c9; text-align:left; font-weight:normal;padding:8px 2.5%}
+.rate_tbl td{ padding:5px 2.5%}
+.rate_desc_wrap{ margin:0 10px}
+.rate_desc{ margin-bottom:30px}
+.rate_desc li{ border-bottom:1px dashed #adadad; padding:8px 4px}
+
+/*充值*/
+.pay_h{ background:url(../images/sep_2.png) repeat-x #f7f7f7 center bottom; background-size:auto 5px; padding:5px 20px}
+.pay_h .m_input{ margin-left:3px}
+.pay_h .m_tips{ padding-left:64px}
+.pay_h a{ color:#0396cd; text-decoration:underline}
+.pay_h a:hover{ color:#0C7AA6}
+.pack_list{ margin:0 15px}
+.pack_list a{ text-decoration:none; display:block}
+.pack_list li{ background:url(../images/tri.png) no-repeat right center; background-size:11px; border-bottom:1px dashed #c9c9c9; padding:16px 0}
+.pack_list li:last-child{ border:none}
+.pack_list i{ display:inline-block; background:#fc9051; border-radius:3px; height:32px; width:69px; overflow:hidden; color:#fff; font-size:12px; line-height:32px; text-align:center; margin-right:10px}
+.pack_list i.jian{ background:#f9655e}
+.pack_list em{ color:#fff; font-size:16px; font-weight:bold}
+.pack_list span{ color:#333}
+.pay_tips{ border-top:1px solid #c9c9c9; padding:15px; font-size:12px; color:#474646}
+.p_pay h2{ background:#eee; line-height:36px; padding:0 20px;  font-weight:normal; border-bottom:1px solid #c9c9c9;}
+
+
+/*关于我们等*/
+.article{ margin:20px 10px}
+.article p{ text-indent:2em; margin:10px 0}
+
+.about_year{ border-left:1px solid #c9c9c9; margin-left:5px; padding-left:18px; margin-top:20px}
+.about_year dt{ background:url(../images/timeline.png) no-repeat;  padding-left:18px; margin-left:-22px}
+.about_year dd{ padding:12px 0 18px}
+
+.contact_list dt,.uninstall dt{ font-weight:bold; margin:20px 0 5px}
+
+.license li{ margin:8px 0}
+.license dt{ margin-top:20px; font-weight:bold}
+
+.help li{ background:url(../images/sep.png) repeat-x center bottom; background-size:auto 13px; padding-bottom:18px; margin-bottom:10px}
+.help li:last-child{ background:none}
+.help h2{ font-weight:normal}
+.help p{ color:#757474;}
+
+.fee_desc li{ margin:10px 0}
+.mask{clear:both;width:100%;position:absolute;z-index:999;background:#000000;top:0px;left:0px;filter:alpha(opacity=80);opacity:0.8;}
