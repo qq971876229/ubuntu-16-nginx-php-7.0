@@ -30,10 +30,6 @@ class IndexController extends baseController
 
 
 
-
-
-        
-
         $data = new \stdClass();
 
         $list = array();
