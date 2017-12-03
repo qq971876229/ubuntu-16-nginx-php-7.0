@@ -25,7 +25,7 @@ RUN \
     useradd -d /home/ftp -s /bin/bash ftpwxx  && \
     echo 'ftpwxx:woshi213' |chpasswd && \
 
-    nginx.conf && \
+#    nginx.conf && \
 
     echo 'root:woshi213' |chpasswd && \
 
